@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0.5em;
+    width: 95%;
+}
+
+.product-name {
+    line-height: 1;
+    margin-top: -0.05em;
+}
+
+.product-name,
+.discount {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 32px;
+}
+
+.left {
+    flex-basis: 30%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    flex-basis: 70%;
+    background-color: white;
+    padding: 1.1em;
+}
+
+p:first-child {
+    letter-spacing: 0.3em;
+}
+
+p {
+    margin-top: .3em;
+}
+
+p,
+.price,
+.attribution a {
+    color: hsl(228, 12%, 48%);
+}
+
+.details {
+    margin-top: -0.8em;
+    line-height: 1.5;
+}
+
+.right div,
+.btn {
+    margin-top: 1.2em;
+}
+
+.discount {
+    color: hsl(158, 36%, 37%);
+    font-weight: bolder;
+}
+
+.price {
+    padding-left: 1em;
+    text-decoration: line-through;
+}
+
+.btn {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.btn img {
+    margin-right: 0.5em;
+}
+
+.btn:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .img {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .right {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top: -0.2em;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1440px) {
+    .card {
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        height: 60%;
+    }
+
+    .left,
+    .right {
+        flex-basis: 50%;
+    }
+
+    .img {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .right {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .right {
+        padding: 2em;
+    }
+
+    .product-name,
+    .discount {
+        font-size: 30px;
+    }
+
+    .right div {
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .btn {
+        margin-top: 0.5em;
+    }
+
+    .attribution {
+        position: absolute;
+        left: 45%;
+        bottom: 0;
+    }
+}
