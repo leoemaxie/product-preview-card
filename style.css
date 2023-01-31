@@ -6,6 +6,7 @@ body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 300;
 }
 
 .card {
@@ -89,6 +90,7 @@ p,
 
 .btn img {
     margin-right: 0.5em;
+    width: 12px;
 }
 
 .btn:hover {
@@ -121,7 +123,7 @@ p,
         left: 50%;
         transform: translate(-50%, -50%);
         width: 40%;
-        height: 60%;
+        height: min-content;
     }
 
     .left,
@@ -143,6 +145,10 @@ p,
         padding: 2em;
     }
 
+    .product-name {
+        margin-top: 0.8em;
+    }
+
     .product-name,
     .discount {
         font-size: 30px;
@@ -157,13 +163,19 @@ p,
         font-size: 13px;
     }
 
+    .details {
+        margin-top: 0.8em;
+    }
+
     .btn {
-        margin-top: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 0;
     }
 
     .attribution {
         position: absolute;
-        left: 45%;
+        bottom: 0;
+        left: 40%;
         bottom: 0;
     }
 }
