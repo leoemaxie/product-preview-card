@@ -28,12 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/screenshots/desktop-screenshot.png)
-
-![](/screenshots/laptop-screenshot.png)
-
-![](/screenshots/mobile-screenshot.png)
-
+![](/screenshots/desktop-screenshot.png) ![](/screenshots/mobile-screenshot.png)
 
 
 ### Links
