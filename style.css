@@ -81,11 +81,11 @@ p,
     background-color: hsl(158, 36%, 37%);
     border: none;
     border-radius: 10px;
-    font-family: 'Montserrat', serif;
-    width: 100%;
-    padding: 13px;
     font-size: 15px;
+    font-weight: 600;
     margin-bottom: 0.5em;
+    padding: 15px;
+    width: 100%;
 }
 
 .btn img {
@@ -98,9 +98,11 @@ p,
 }
 
 .attribution {
+    font-family: monospace;
     font-size: 11px;
     text-align: center;
 }
+
 
 @media screen and (max-width: 480px) {
     .img {
@@ -123,7 +125,7 @@ p,
         left: 50%;
         transform: translate(-50%, -50%);
         width: 40%;
-        height: min-content;
+        height: fit-content;
     }
 
     .left,
@@ -150,7 +152,7 @@ p,
     }
 
     .right div {
-        margin-top: 2em;
+        margin-top: 1.5em;
         margin-bottom: 1em;
     }
 
@@ -159,25 +161,26 @@ p,
     }
 
     .btn {
-        margin-top: 1em;
-        margin-bottom: 0;
+        margin-top: 0.8em;
+        margin-bottom: 0em;
     }
 
     .attribution {
         position: absolute;
-        left: 40%;
-        bottom: 0;
+        bottom: 1em;
+        text-align: center;
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .card {
-        width: 80%;
+        width: 75%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .card {
-        width: 60%;
+        width: 65%;
     }
 }
