@@ -81,10 +81,10 @@ p,
     background-color: hsl(158, 36%, 37%);
     border: none;
     border-radius: 10px;
+    font-family: 'Montserrat', serif;
     width: 100%;
     padding: 13px;
     font-size: 15px;
-    font-weight: 500;
     margin-bottom: 0.5em;
 }
 
@@ -98,7 +98,6 @@ p,
 }
 
 .attribution {
-    font-family: 'Fraunces', san;
     font-size: 11px;
     text-align: center;
 }
@@ -116,7 +115,7 @@ p,
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1440px) {
+@media screen and (min-width: 480px) {
     .card {
         flex-direction: row;
         position: absolute;
@@ -147,12 +146,7 @@ p,
     }
 
     .product-name {
-        margin-top: 0.8em;
-    }
-
-    .product-name,
-    .discount {
-        font-size: 30px;
+        margin-top: 0.6em;
     }
 
     .right div {
@@ -160,12 +154,8 @@ p,
         margin-bottom: 1em;
     }
 
-    p {
-        font-size: 13px;
-    }
-
     .details {
-        margin-top: 0.8em;
+        margin-top: 0.1em;
     }
 
     .btn {
@@ -177,5 +167,17 @@ p,
         position: absolute;
         left: 40%;
         bottom: 0;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: 60%;
     }
 }
