@@ -6,6 +6,7 @@ body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 300;
 }
 
 .card {
@@ -38,7 +39,7 @@ body {
 .right {
     flex-basis: 70%;
     background-color: white;
-    padding: 1.1em;
+    padding: 1.2em;
 }
 
 p:first-child {
@@ -80,15 +81,16 @@ p,
     background-color: hsl(158, 36%, 37%);
     border: none;
     border-radius: 10px;
-    width: 100%;
-    padding: 13px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 0.5em;
+    padding: 15px;
+    width: 100%;
 }
 
 .btn img {
     margin-right: 0.5em;
+    width: 12px;
 }
 
 .btn:hover {
@@ -96,9 +98,11 @@ p,
 }
 
 .attribution {
+    font-family: monospace;
     font-size: 11px;
     text-align: center;
 }
+
 
 @media screen and (max-width: 480px) {
     .img {
@@ -113,15 +117,16 @@ p,
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1440px) {
+@media screen and (min-width: 480px) {
     .card {
         flex-direction: row;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 40%;
-        height: 60%;
+        width: 40em;
+        max-width: 95%;
+        height: fit-content;
     }
 
     .left,
@@ -143,27 +148,28 @@ p,
         padding: 2em;
     }
 
-    .product-name,
-    .discount {
-        font-size: 30px;
+    .product-name {
+        margin-top: 0.6em;
     }
 
     .right div {
-        margin-top: 2em;
+        margin-top: 1.5em;
         margin-bottom: 1em;
     }
 
-    p {
-        font-size: 13px;
+    .details {
+        margin-top: 0.1em;
     }
 
     .btn {
-        margin-top: 0.5em;
+        margin-top: 0.8em;
+        margin-bottom: 0em;
     }
 
     .attribution {
         position: absolute;
-        left: 35%;
-        bottom: 0;
+        bottom: 1em;
+        text-align: center;
+        width: 100%;
     }
 }
