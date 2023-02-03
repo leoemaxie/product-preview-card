@@ -124,7 +124,8 @@ p,
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 40%;
+        width: 40em;
+        max-width: 95%;
         height: fit-content;
     }
 
@@ -170,17 +171,5 @@ p,
         bottom: 1em;
         text-align: center;
         width: 100%;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .card {
-        width: 75%;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .card {
-        width: 65%;
     }
 }
